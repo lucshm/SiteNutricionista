@@ -1,0 +1,28 @@
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function carrosel(){
+
+    idx++;
+
+    if(idx > img.length - 1){
+
+        idx = 0;
+    }
+
+    if(imgs.clientWidth==500){
+        imgs.style.transform = `translateX(${-idx * 500}px)`;
+    }
+
+    else if(imgs.clientWidth==420){
+        imgs.style.transform = `translateX(${-idx * 420}px)`;
+    }
+    
+    else{
+        imgs.style.transform = `translateX(${-idx * 370}px)`;
+    }
+}
+
+setInterval(carrosel, 5500);

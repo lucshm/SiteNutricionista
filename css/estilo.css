@@ -1,0 +1,371 @@
+/*Customizar a caixa do Nav (remover custumizações padrões)*/
+
+.formatNav:link, .formatNav:visited {
+	color: rgb(36, 37, 36);
+	padding: 6px 18px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	border-right: solid;
+    border-right-color: #238723;
+}
+
+/*Customizar a caixa do Nav (mouse em cima/clique)*/
+
+.formatNav:hover, .formatNav:active {
+  	color: #7A7A7A;
+}
+
+/*Borda esquerda da barra de navegação*/
+
+#box{ 
+	border-left: solid; 
+    border-left-color: #238723;
+}
+
+/*Customizar a caixa dos eBooks (remover custumizações padrões)*/
+
+.formateBooks:link, .formateBooks:visited {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*Customizar a caixa dos eBooks (mouse em cima/clique)*/
+
+.formateBooks:hover, .formateBooks:active {
+	margin: 0 auto;
+	font-weight: bold;
+	filter: brightness(60%);
+}
+
+/*Criação da linha do Footer*/
+
+.line-divisor {
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+/*Caixa para o carrossel*/
+
+.carrossel{
+	margin-left: 6%;
+	box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+	height: 750px;
+	width: 500px;
+}
+
+/*Ajustes ao passar imagem no carrossel*/
+
+.container{
+	display: flex;
+	transition: transform 1s ease-in-out;
+	transform: translateX(0);
+}
+
+/*Ajustes na imagem do carrossel*/
+
+.container img{
+	object-fit: cover;
+	height: 750px;
+	width: 500px;
+}
+
+/*Ajustes ao fazer divisao*/
+
+.mainInf {
+	display: table;
+}
+
+.mainInf:after{
+	display: table;
+	clear: both;
+}
+
+/*Ajustes no tamanho do carrossel*/
+
+#column1{ 
+	margin-top: 15px;
+	float: left;
+}
+
+/*Ajustes das infos ao lado do carrossel*/
+
+#column2{ 
+	margin-top: 10px;
+	margin-left: 9%;
+	float: left;
+	width: 40%;
+}
+
+/*Ajuste nas caixas das receitas*/
+
+.columnReceita{ 
+	text-align: center;
+	float: left;
+	margin-left: 6%;
+	margin-top: 20px;
+	width: 42%;
+}
+
+.columnReceita h4{
+	padding-bottom: 3px;
+}
+
+.columnReceita img{
+	box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.19);
+}
+
+/*Ajuste nas caixas da home*/
+
+.columnHome{
+	text-align: center;
+	float: left;
+	margin-left: 5%;
+	width: 43%;
+}
+
+.columnHome img{
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+/*Ajuste nas caixas do Footer*/
+
+.columnFooter {
+	text-align: center;
+	float: left;
+	width: 33%;
+}
+
+/*Ajustes gereal*/
+
+body{
+	margin: 0 auto;
+	padding: 0;
+	color: rgb(33, 34, 33);
+	font: 16px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: rgb(232, 238, 232);
+}
+
+/*Ajustes no cabeçalho*/
+
+header{ 
+	text-align: right;
+	width: 100%;
+	background-color: #238723;
+}
+
+/*Ajustes nos icones do insta no cabeçalho*/
+
+header ul {  
+	margin-right: 3%;
+	display: flex;
+	flex-direction: row-reverse;
+	list-style: none;
+	margin-top: 0px;
+}
+
+/*Ajustes nos icones do insta no cabeçalho*/
+
+header img{
+	padding-left: 20px;
+}
+
+/*Retirar a bolinha da lista de navegação */
+
+ul{ 
+	list-style: none;
+}
+
+/*Ajustes no main*/
+
+main {
+	margin: 0 auto;
+	width: 90%;
+	text-align: justify;
+}
+
+/*Ajustes no nav*/
+
+nav{
+	width: 100%;
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif
+	
+}
+
+/*Ajustes nos link do nav*/
+
+nav a {
+	text-align: center;
+}
+
+/*Ajustes nas listas do nav*/
+
+nav ul {
+	font-size: 18px;
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+}
+
+/*Ajustes no aside*/
+
+aside{
+	text-align: center;
+}
+
+/*Ajustes no footer*/
+
+footer{
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+	font-size: 15px;
+}
+
+/*Ajustes na imagem do footer*/
+
+footer img:hover{
+
+	filter: brightness(60%);
+}
+
+/*Ajustes apenas nos itens do footer*/
+footer section {
+	margin: 0 auto;
+}
+
+/*Ajustes no h3*/
+
+h3{
+	font-weight: bold;
+	color: #42af39;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1255px) and (min-width: 1110px){
+	
+	.carrossel{
+		margin-left: 3%;
+	}
+
+	#column2{
+		margin-left: 6%;
+	}
+}
+
+@media only screen and (max-width: 1110px) and (min-width: 915px){
+	
+	.carrossel{
+		margin-left: 1%;
+		height: 630px;
+		width: 420px;
+	}
+	
+	.container img{
+		height: 630px;
+		width: 420px;
+	}
+
+	#column2{
+		margin-left: 7%;
+	}
+
+	.columnReceita{	
+		margin-left: 6%;
+		padding-right: 20px;
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 915px) and (min-width: 600px){
+	
+	.carrossel{
+		margin-left: 15%;
+		height: 630px;
+		width: 420px;
+	}
+	
+	.container img{
+		height: 630px;
+		width: 420px;
+	}
+
+	.columnHome{
+		margin-left: 0%;
+		width: 100%;
+	}
+
+	.columnReceita{	
+		margin-left: 0%;
+		width: 98%;
+	}
+
+	#column2{
+		margin-left: 13%;
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+
+	.carrossel{
+		margin-left: 0.5%;
+		height: 555px;
+		width: 370px;
+	}
+	
+	.container img{
+		height: 555px;
+		width: 370px;
+	}
+
+	.instagram{
+		padding-left: 13px;
+		width: 48px;
+		height: 48px;
+	}
+
+	.columnHome{
+		margin-left: 0%;
+		width: 100%;
+	}
+
+	.columnReceita{	
+		margin-left: 2%;
+		width: 95%;
+	}
+
+	.columnFooter {
+		width: 98%;
+	}
+	
+	#column2{
+		margin-left: 1%;
+		width: 98%;
+	}
+
+	body{
+		margin: 0 auto;
+		padding: 0;
+		color: black;
+		font: 16px;
+	}
+
+	nav ul {
+		font-size: 18px;
+		padding: 12px;
+	}
+
+	footer h4{
+		font-size: 17px;
+	}
+}
